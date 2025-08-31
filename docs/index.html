@@ -3,56 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visualinks – Chrome Extension</title>
+  <title>Visualinks – Visual Bookmark Manager & Chrome Tab Organizer</title>
+  <meta name="description" content="Visualinks is a visual bookmark manager and Chrome tab organizer. Organize links with icons, images, and GIFs. Group into Rooms & Stations. Privacy-first.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Visualinks</h1>
-    <p>A Visual Bookmark Manager & Chrome Tab Organizer</p>
-    <a href="https://chromewebstore.google.com/detail/visualinks/hkoaejiklnmjhjeodoadnfjmbijffaol" class="btn">➤ Install from Chrome Web Store</a>
-    <a href="https://github.com/farahamir/my-links" class="btn secondary">View on GitHub</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="hero">
+    <div class="container">
+      <nav class="topnav" aria-label="Primary">
+        <div class="brand">Visualinks</div>
+        <ul>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="https://github.com/farahamir/my-links" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Visualinks</h1>
+        <p class="subtitle">A Visual Bookmark Manager & Chrome Tab Organizer</p>
+        <div class="cta">
+          <a href="https://chromewebstore.google.com/detail/visualinks/hkoaejiklnmjhjeodoadnfjmbijffaol" class="btn primary" aria-label="Install Visualinks from Chrome Web Store">➤ Install from Chrome Web Store</a>
+          <a href="https://github.com/farahamir/my-links" class="btn secondary" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section class="video">
-    <h2>🎥 Watch the Tutorial</h2>
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xhpfW1ZE2bM" 
-              title="Visualinks Tutorial" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
+  <main id="main">
+    <section id="video" class="section video">
+      <div class="container">
+        <h2>🎥 Watch the Tutorial</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xhpfW1ZE2bM" 
+                  title="Visualinks Tutorial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container">
+        <h2>Why Visualinks?</h2>
+        <p class="lead">Tired of tab chaos and messy bookmarks? Visualinks helps you organize Chrome visually.</p>
+        <ul class="feature-list">
+          <li>🎨 Organize bookmarks with icons, images & GIFs</li>
+          <li>📂 Group links into Rooms & Stations</li>
+          <li>🔍 Search across bookmarks, history & tabs instantly</li>
+          <li>🧱 Customize layouts & backgrounds</li>
+          <li>🔐 100% local storage – privacy-first</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="screenshots" class="section screenshots">
+      <div class="container">
+        <h2>Screenshots</h2>
+        <div class="grid">
+          <figure>
+            <img src="1 Hero  Overview.PNG" alt="Visualinks Overview" />
+            <figcaption>Overview</figcaption>
+          </figure>
+          <figure>
+            <img src="2 Problem - Solution .png" alt="Problem and Solution" />
+            <figcaption>Problem → Solution</figcaption>
+          </figure>
+          <figure>
+            <img src="3 Visual Organization.png" alt="Visual Organization" />
+            <figcaption>Visual Organization</figcaption>
+          </figure>
+          <figure>
+            <img src="4 Rooms & Stations.png" alt="Rooms and Stations" />
+            <figcaption>Rooms & Stations</figcaption>
+          </figure>
+          <figure>
+            <img src="5 Smart Search.png" alt="Smart Search" />
+            <figcaption>Smart Search</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>The Story Behind Visualinks</h2>
+        <div class="card">
+          <p>
+            Tired of drowning in Chrome tabs and messy bookmarks?
+            Visualinks is a visual bookmark manager and tab organizer that turns your browser into a customizable workspace. Instead of scrolling through endless text lists, you can navigate your bookmarks and links visually, intuitively, and memorably.
+          </p>
+          <p>
+            Transform your browser into a visually organized hub of your favorite links using custom backgrounds, icons, and GIFs. This Chrome extension allows you to build personalized, memorable “Rooms” where each category or group of links is clearly distinguished by visuals that make navigation fast, intuitive, and enjoyable.
+          </p>
+          <p>
+            Instead of sifting through endless bookmarks or tabs, you can create interactive spaces:
+          </p>
+          <ul>
+            <li>Items hold your individual links.</li>
+            <li>Stations act as portals to new views or categories.</li>
+            <li>Dummies are decorative image holders to personalize your space.</li>
+          </ul>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>🎨 Visual Organization: Assign unique icons, images, or GIFs to links and categories to easily recognize and recall their purpose.</li>
+            <li>🧠 Memory-Based Navigation: Create link groups in ways that align with how you naturally remember information—visually and spatially.</li>
+            <li>🔍 Smart Search: Instantly search across your saved links, Chrome bookmarks, history, and reading list—even by typing just a few letters or keywords.</li>
+            <li>🗂 Hierarchical Structure: Group related links under categories (e.g., shopping 🛒, projects, research) and navigate through a multi-level system of rooms and stations.</li>
+            <li>🧱 Customizable Layout: Change backgrounds, assign transparent icons, and visually design each space to your liking.</li>
+            <li>📁 Supports Local Files: Link to local PDF files (when using Adobe Acrobat extension).</li>
+            <li>🔐 Privacy-First: No Google account required. No data is sent to the cloud. Everything is stored locally in your browser and can be exported/imported for backup.</li>
+            <li>🗑 Trash System: Deleted items go to trash and can be reviewed before permanent removal.</li>
+          </ul>
+          <p><strong>Why Visualinks?</strong><br/>
+            One late night, I was juggling a work project, gift shopping, and a random documentary binge. My Chrome looked like a battlefield of tiny favicons. That’s when I realized: my brain doesn’t work in lists — it works in visual spaces. Visualinks was built to make Chrome match that way of thinking.
+          </p>
+          <p><strong>Perfect For:</strong></p>
+          <ul>
+            <li>✔ Power users managing dozens of tabs</li>
+            <li>✔ Visual thinkers who prefer icons over text</li>
+            <li>✔ Anyone tired of Chrome’s default bookmark manager</li>
+            <li>✔ Productivity enthusiasts and digital minimalists</li>
+          </ul>
+          <p><strong>Get Started:</strong> Install Visualinks today and turn your browser into a visual hub for everything you do online.</p>
+          <p><strong>Usage Instructions</strong> (watch the video for step-by-step instructions):</p>
+          <ul>
+            <li>Right-click on any view to access actions like opening bookmarks, history, tabs, or reading list.</li>
+            <li>Add links to items manually or by dragging from other Chrome dialogs.</li>
+            <li>Hover over items to preview saved links.</li>
+            <li>Assign icons individually to distinguish between similar links, even from the same domain.</li>
+            <li>Customize every object (Item, Station, Dummy) with a title and a public image URL.</li>
+            <li>Use search across all views to quickly access a link or jump to a specific room (available unless a dialog/context menu is open).</li>
+            <li>Stations cannot be deleted without removing their children first.</li>
+            <li>Objects and links are removed permanently once deleted from trash.</li>
+          </ul>
+          <p><strong>Backup & Portability:</strong><br/>
+            Export your workspace from the options menu for backup or transfer to another device. Note: If the extension is uninstalled without exporting, your data will be lost.
+          </p>
+          <p>
+            If you have any questions or issues, feel free to send an email or leave a comment on the YouTube video. We’d love to hear your feedback!
+          </p>
+          <p>
+            The code is here: <a href="https://github.com/farahamir/my-links" target="_blank" rel="noopener">github.com/farahamir/my-links</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Visualinks · Built with ❤️ by <a href="https://github.com/farahamir" target="_blank" rel="noopener">farahamir</a></p>
     </div>
-  </section>
-
-  <section class="features">
-    <h2>Why Visualinks?</h2>
-    <p>Tired of tab chaos and messy bookmarks? Visualinks helps you organize Chrome visually.</p>
-    <ul>
-      <li>🎨 Organize bookmarks with icons, images & GIFs</li>
-      <li>📂 Group links into Rooms & Stations</li>
-      <li>🔍 Search across bookmarks, history & tabs instantly</li>
-      <li>🧱 Customize layouts & backgrounds</li>
-      <li>🔐 100% local storage – privacy-first</li>
-    </ul>
-  </section>
-
-  <section class="screenshots">
-    <h2>Screenshots</h2>
-    <img src="screenshot1.png" alt="Visualinks Overview" />
-    <img src="screenshot2.png" alt="Problem → Solution" />
-    <img src="screenshot3.png" alt="Visual Organization" />
-  </section>
-
-  <section class="about">
-    <h2>The Story Behind Visualinks</h2>
-    <p>
-      Visualinks was born out of late-night frustration with endless tabs and scattered bookmarks. 
-      Instead of text lists, Visualinks turns your browser into a visual hub that matches how your brain remembers things.
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2025 Visualinks | Built with ❤️ by <a href="https://github.com/farahamir">farahamir</a></p>
   </footer>
 </body>
 </html>

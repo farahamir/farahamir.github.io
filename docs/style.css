@@ -1,24 +1,88 @@
-.video {
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 900px;
-  padding: 1rem;
+/* Base */
+:root{
+  --bg: #0b1020;
+  --bg-elev: #0f1530;
+  --text: #e7ebf6;
+  --muted: #b8c2e0;
+  --brand: #6ea8ff;
+  --brand-2: #9b7bff;
+  --accent: #38e3ae;
+  --card: #111733;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --radius: 14px;
 }
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  background: radial-gradient(1200px 800px at 20% -10%, rgba(110,168,255,0.18), transparent 60%),
+              radial-gradient(900px 600px at 100% 0%, rgba(155,123,255,0.14), transparent 50%),
+              var(--bg);
+  line-height:1.6;
 }
+img{max-width:100%; height:auto; display:block}
+a{color:var(--brand)}
+.container{max-width:1100px; margin:0 auto; padding:0 20px}
+.skip-link{position:absolute; left:-999px; top:-999px}
+.skip-link:focus{left:16px; top:16px; background:#000; color:#fff; padding:8px 12px; border-radius:8px}
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+/* Top Navigation & Hero */
+.hero{
+  position:relative;
+  background: linear-gradient(180deg, rgba(17,23,51,0.9), rgba(11,16,32,0.8));
+  border-bottom:1px solid var(--border);
+}
+.topnav{display:flex; align-items:center; justify-content:space-between; padding:18px 0}
+.topnav .brand{font-weight:700; letter-spacing:0.5px}
+.topnav ul{display:flex; gap:18px; list-style:none; padding:0; margin:0}
+.topnav a{color:var(--muted); text-decoration:none; font-weight:500}
+.topnav a:hover{color:var(--text)}
+.hero-content{padding:56px 0 36px; text-align:center}
+.hero h1{font-size: clamp(2rem, 3vw + 1rem, 3rem); margin:0 0 10px}
+.subtitle{color:var(--muted); font-size:1.1rem; margin:0 auto 24px; max-width:760px}
+.cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+.btn{display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:999px; text-decoration:none; font-weight:600; transition:all .2s ease; border:1px solid var(--border)}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#0b1020; box-shadow: var(--shadow)}
+.btn.primary:hover{filter:brightness(1.05); transform:translateY(-1px)}
+.btn.secondary{background:transparent; color:var(--text)}
+.btn.secondary:hover{background:rgba(255,255,255,0.06)}
+
+/* Sections */
+.section{padding:64px 0}
+.section h2{font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.2rem); margin:0 0 16px}
+.lead{color:var(--muted); max-width:760px}
+
+/* Video */
+.video .video-container{position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; border-radius:var(--radius); box-shadow: var(--shadow); border:1px solid var(--border); background:#000}
+.video .video-container iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:var(--radius)}
+.video h2{text-align:center; margin-bottom:16px}
+
+/* Features */
+.features{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)); border-top:1px solid var(--border); border-bottom:1px solid var(--border)}
+.feature-list{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; padding:0; margin:22px 0 0; list-style:none}
+.feature-list li{background:var(--card); border:1px solid var(--border); padding:14px 16px; border-radius:12px; box-shadow: var(--shadow)}
+
+/* Screenshots */
+.screenshots .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px}
+.screenshots figure{background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; box-shadow: var(--shadow)}
+.screenshots img{width:100%; height:auto; display:block}
+.screenshots figcaption{padding:10px 12px; color:var(--muted); font-size:.95rem}
+
+/* About */
+.about .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; box-shadow: var(--shadow)}
+.about ul{margin:8px 0 16px}
+.about li{margin:6px 0}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--border); padding:28px 0; color:var(--muted)}
+.site-footer a{color:var(--text)}
+
+/* Responsive tweaks */
+@media (max-width:600px){
+  .topnav ul{gap:12px}
+  .hero-content{padding:40px 0 24px}
+  .btn{width:100%; max-width:380px}
 }
